@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <form action="">
+        <label for="">Select a city</label>
+        <select onchange="myCity()" name="" id="city">
+            <option value="London">London</option>
+            <option value="Dublin">Dublin</option>
+            <option value="Paris">Paris</option>
+            <option value="Berlin">Berlin</option>
+            <option value="Madrid">Madrid</option>
+        </select>
+    </form>
+    <section>
+        <h1><%= city%></h1>
+        <h1><%=weatherdata.weather[0].main%></h1>
+        <p><%=weatherdata.weather[0].description%></p>
+        <p><%= temp%> C</p>
+
+    </section>
+
+</body>
+<script src="main.js"></script>
+</html>
