@@ -4,4 +4,5 @@ let userCity
 function myCity() {
     userCity = city.value
     console.log(userCity)
+    return userCity
 }
